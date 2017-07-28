@@ -4,54 +4,41 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2 id="header">See What They Are Saying!</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Content)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PublishedDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.YesOrNO)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Category.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Content)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PublishedDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.YesOrNO)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-12 colBorder">
+            <div>
+                <h3><b>Name:</b></h3>
+                <h4>@Html.DisplayFor(modelItem => item.Category.Name)</h4>
+            </div>
+            <div>
+                <h3><b>Snippet:</b></h3>
+                <h4>@Html.DisplayFor(modelItem => item.Title)</h4>
+            </div>
+            <h3>
+                <b>Content:</b>
+            </h3>
+            <h4>@Html.DisplayFor(modelItem => item.Content)</h4>
+            <h3>
+                <b>Date:</b>
+            </h3>
+            <h4>@Html.DisplayFor(modelItem => item.PublishedDate)</h4>
+            <h4>
+                <b>Would you Recommend:</b>
+            </h4>
+            <h5>@Html.DisplayFor(modelItem => item.YesOrNO)</h5>
 
-</table>
+            <p id="actionLinks">
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+            </p>
+        </div>
+    }
+</div>
+
+
