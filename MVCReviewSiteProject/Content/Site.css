@@ -26,5 +26,21 @@ textarea {
     text-align:center;
 }
 .jumbotron {
-    text-align:center;
+    text-align: center;
+    background-image: url('../Images/zinkengrey.jpg');
+    color:#D8B760;
 }
+/*CAROUSEL IMAGE EDITING*/
+#bose {
+    width:1140px;
+    height:500px;
+}
+#sony {
+    width:1140px;
+    height:500px;
+}
+#beats {
+    width:1140px;
+    height:500px;
+}
+
