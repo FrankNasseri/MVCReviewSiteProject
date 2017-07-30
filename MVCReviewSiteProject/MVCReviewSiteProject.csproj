@@ -197,7 +197,11 @@
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Images\beats.jpg" />
     <Content Include="Images\bose.jpg" />
+    <Content Include="Images\chains.jpg" />
+    <Content Include="Images\ice.jpg" />
+    <Content Include="Images\nature.jpg" />
     <Content Include="Images\sony.jpg" />
+    <Content Include="Images\water.jpg" />
     <Content Include="Images\zinkengrey.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

@@ -13,7 +13,7 @@
    will truncate terms that are too long to fit in the left column 
 */
 .dl-horizontal dt {
-    white-space: normal;
+    white-space:normal;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -22,8 +22,16 @@ select,
 textarea {
     max-width: 280px;
 }
-#header {
-    text-align:center;
+/*HOME PAGE STYLING*/
+h2#header {
+    text-align: center;
+    font-family: 'Droid Sans', sans-serif;
+    padding-top:40px;
+    padding-bottom:40px;
+    color:gold;
+    margin-top:0px;
+    margin-bottom:0px;
+    animation:alternate-reverse;
 }
 .jumbotron {
     text-align: center;
@@ -43,4 +51,19 @@ textarea {
     width:1140px;
     height:500px;
 }
-
+/*REVIEW PAGE EDITING*/
+b {
+    color:#9C2900;
+}
+h4 {
+    color:white;
+}
+div#background.col-md-12.colBorder {
+    background-image: url('../Images/nature.jpg');
+}
+body {
+    background-color:#9C2900;
+}
+h5 {
+    color:white;
+}

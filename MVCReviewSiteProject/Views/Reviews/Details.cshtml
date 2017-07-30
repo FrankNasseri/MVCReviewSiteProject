@@ -6,7 +6,7 @@
 
 <h2>Details</h2>
 
-<div>
+@*<div>
     <h4>Review</h4>
     <hr />
     <dl class="dl-horizontal">
@@ -51,6 +51,55 @@
         </dd>
 
     </dl>
+</div>*@
+<!-- Left-aligned -->
+<!--ADDED BOOTSTRAP MEDIA OBJECTS-->
+<div class="media">
+    <div class="media-left">
+        <img src="~/Images/water.jpg" class="media-object" style="width:60px">
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">Username</h4>
+        <h4>
+            @Html.DisplayNameFor(model => model.Category.Name)
+        </h4>
+
+        <h5>
+            @Html.DisplayFor(model => model.Category.Name)
+        </h5>
+
+        <h4>
+            @Html.DisplayNameFor(model => model.Title)
+        </h4>
+
+        <h5>
+            @Html.DisplayFor(model => model.Title)
+        </h5>
+
+        <h4>
+            @Html.DisplayNameFor(model => model.Content)
+        </h4>
+
+        <h5>
+            @Html.DisplayFor(model => model.Content)
+        </h5>
+
+        <h4>
+            @Html.DisplayNameFor(model => model.PublishedDate)
+        </h4>
+
+        <h5>
+            @Html.DisplayFor(model => model.PublishedDate)
+        </h5>
+
+        <h4>
+            @Html.DisplayNameFor(model => model.YesOrNO)
+        </h4>
+
+        <h5>
+            @Html.DisplayFor(model => model.YesOrNO)
+        </h5>
+    </div>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
